@@ -94,8 +94,56 @@
             ],
             "scripts": []
           }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "Proyecto-QA:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "Proyecto-QA:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "ct": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "Proyecto-QA:serve",
+            "watch": true,
+            "headless": false,
+            "testingType": "component"
+          },
+          "configurations": {
+            "development": {
+              "devServerTarget": "Proyecto-QA:serve:development"
+            }
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "Proyecto-QA:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "Proyecto-QA:serve:production"
+            }
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a4a1c1f0-da64-447a-9002-7ff6451f3c07"
   }
 }
