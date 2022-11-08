@@ -4,10 +4,9 @@ require('cypress-xpath');
 /*
     REQISITOS PARA EL CORRECTO FUNCIONAMIENTO DE LAS PRUEBAS
     - Utilizar un navegador Chrome
-    - Desactivar la seguridad de Chrome en cypress.config.ts para detectar correctamente el iframe que encapsula todo el formulario
+    - Desactivar la seguridad de Chrome en cypress.config.ts para detectar correctamente el iframe
         chromeWebSecurity: false
-    Esto es necesario para detectar correctamente el iframe que encapsula todo el formulario
-    
+
     - Instalar en la terminal el cypress-iframe.
         npm install -D cypress-iframe
 

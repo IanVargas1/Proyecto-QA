@@ -3,11 +3,10 @@
 ## REQUIREMENTS FOR THE CORRECT OPERATION OF THE TESTS
 Use a Chrome browser
 ##
-Disable Chrome security in `cypress.config.ts` to correctly detect the iframe that encapsulates the entire form.
+Disable Chrome security in `cypress.config.ts` to correctly detect the iframe.
 ```
 chromeWebSecurity: false
 ```
-This is necessary to correctly detect the iframe that encapsulates the entire form.
 ##
 Install the cypress-iframe in the terminal.
 >npm install -D cypress-iframe
