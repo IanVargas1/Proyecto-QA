@@ -1,5 +1,32 @@
 # ProyectoQA
 
+## REQUIREMENTS FOR THE CORRECT OPERATION OF THE TESTS
+Use a Chrome browser
+##
+Disable Chrome security in `cypress.config.ts` to correctly detect the iframe that encapsulates the entire form.
+```
+chromeWebSecurity: false
+```
+This is necessary to correctly detect the iframe that encapsulates the entire form.
+##
+Install the cypress-iframe in the terminal.
+>npm install -D cypress-iframe
+##
+Add to `cypress.config.ts` the following code:
+```
+e2e: {
+    'baseUrl': 'http://localhost:4200',
+    supportFile: 'cypress/support/e2e.ts'
+}
+```
+##
+In `cypress/support/e2e.ts` add the following code:
+```
+Cypress.on('uncaught:exception', (err, runnable) => {
+    return false
+})
+```
+##
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
 ## Development server
