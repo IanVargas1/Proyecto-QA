@@ -2,6 +2,8 @@ import 'cypress-iframe';
 require('cypress-xpath');
 
 /*
+repositorio GitHub: https://github.com/IanVargas1/Proyecto-QA.git
+
     REQISITOS PARA EL CORRECTO FUNCIONAMIENTO DE LAS PRUEBAS
     - Utilizar un navegador Chrome
     - Desactivar la seguridad de Chrome en cypress.config.ts para detectar correctamente el iframe
